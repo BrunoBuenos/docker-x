@@ -42,6 +42,18 @@ services:
     depends_on:
       - elasticsearch
 
+  apache:
+   build:
+     context: apache/
+   volumes:
+     - /home/docker:/usr/local/apache2/htdocs/
+   ports:
+     - "8080:80"
+   networks:
+     - elk
+   depends_on:
+     - elasticsearch
+
 networks:
 
   elk:
