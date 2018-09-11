@@ -1,0 +1,208 @@
+[
+  {
+    "_id": "d6166a10-8c22-11e8-bbee-f70be0a1603d",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Cit-Dash",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":24,\"y\":21,\"w\":24,\"h\":18,\"i\":\"1\"},\"embeddableConfig\":{\"vis\":{\"legendOpen\":false}},\"id\":\"efecf9c0-8c1f-11e8-bbee-f70be0a1603d\",\"type\":\"visualization\",\"version\":\"6.3.0\"},{\"panelIndex\":\"2\",\"gridData\":{\"x\":0,\"y\":76,\"w\":48,\"h\":22,\"i\":\"2\"},\"embeddableConfig\":{},\"id\":\"a565d7f0-8c1f-11e8-bbee-f70be0a1603d\",\"type\":\"visualization\",\"version\":\"6.3.0\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":0,\"y\":5,\"w\":5,\"h\":16,\"i\":\"3\"},\"embeddableConfig\":{},\"id\":\"7f3bcb20-8c1f-11e8-bbee-f70be0a1603d\",\"type\":\"visualization\",\"version\":\"6.3.0\"},{\"panelIndex\":\"5\",\"gridData\":{\"x\":0,\"y\":39,\"w\":48,\"h\":17,\"i\":\"5\"},\"embeddableConfig\":{\"vis\":{\"defaultColors\":{\"100 - 125\":\"rgb(0,104,55)\"},\"legendOpen\":false}},\"id\":\"8862ab50-8c20-11e8-bbee-f70be0a1603d\",\"type\":\"visualization\",\"version\":\"6.3.0\"},{\"panelIndex\":\"6\",\"gridData\":{\"x\":0,\"y\":21,\"w\":24,\"h\":18,\"i\":\"6\"},\"embeddableConfig\":{\"vis\":{\"legendOpen\":false}},\"id\":\"9d09e180-8c21-11e8-bbee-f70be0a1603d\",\"type\":\"visualization\",\"version\":\"6.3.0\"},{\"panelIndex\":\"7\",\"gridData\":{\"x\":0,\"y\":56,\"w\":48,\"h\":20,\"i\":\"7\"},\"embeddableConfig\":{\"mapCenter\":[-8.336517992258848,-37.68035888671876],\"mapZoom\":8},\"id\":\"a4740870-8c20-11e8-bbee-f70be0a1603d\",\"type\":\"visualization\",\"version\":\"6.3.0\"},{\"panelIndex\":\"8\",\"gridData\":{\"x\":19,\"y\":5,\"w\":29,\"h\":16,\"i\":\"8\"},\"embeddableConfig\":{\"spy\":null},\"id\":\"2dc9d9a0-8c22-11e8-bbee-f70be0a1603d\",\"type\":\"visualization\",\"version\":\"6.3.0\"},{\"panelIndex\":\"9\",\"gridData\":{\"x\":5,\"y\":5,\"w\":14,\"h\":16,\"i\":\"9\"},\"embeddableConfig\":{},\"id\":\"44096310-8c23-11e8-bbee-f70be0a1603d\",\"type\":\"visualization\",\"version\":\"6.3.0\"},{\"panelIndex\":\"10\",\"gridData\":{\"x\":0,\"y\":0,\"w\":48,\"h\":5,\"i\":\"10\"},\"embeddableConfig\":{},\"id\":\"4e9d73f0-9b2f-11e8-b120-3706c0378857\",\"type\":\"visualization\",\"version\":\"6.3.0\"},{\"panelIndex\":\"11\",\"gridData\":{\"x\":0,\"y\":98,\"w\":48,\"h\":28,\"i\":\"11\"},\"version\":\"6.3.0\",\"type\":\"visualization\",\"id\":\"37359d80-9b36-11e8-b120-3706c0378857\",\"embeddableConfig\":{}}]",
+      "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":true,\"useMargins\":false}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"language\":\"kuery\",\"query\":\"\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "7f3bcb20-8c1f-11e8-bbee-f70be0a1603d",
+    "_type": "visualization",
+    "_source": {
+      "title": "Contador Contratantes2",
+      "visState": "{\"title\":\"Contador Contratantes2\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":60}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"numero.keyword\",\"customLabel\":\"Contratantes\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"2a9c63c0-9c02-11e8-9b47-0d15ac222371\",\"filter\":[],\"query\":{\"language\":\"kuery\",\"query\":\"\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "a565d7f0-8c1f-11e8-bbee-f70be0a1603d",
+    "_type": "visualization",
+    "_source": {
+      "title": "Cloud Word2",
+      "visState": "{\"title\":\"Cloud Word2\",\"type\":\"tagcloud\",\"params\":{\"scale\":\"linear\",\"orientation\":\"single\",\"minFontSize\":18,\"maxFontSize\":72,\"showLabel\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"nomeportal.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":30,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Serviços\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"2a9c63c0-9c02-11e8-9b47-0d15ac222371\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"kuery\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "44096310-8c23-11e8-bbee-f70be0a1603d",
+    "_type": "visualization",
+    "_source": {
+      "title": "Chamados Contador2",
+      "visState": "{\"title\":\"Chamados Contador2\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":60}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Chamados\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"2a9c63c0-9c02-11e8-9b47-0d15ac222371\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"kuery\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "9d09e180-8c21-11e8-bbee-f70be0a1603d",
+    "_type": "visualization",
+    "_source": {
+      "title": "Mês a Mês2",
+      "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"3\",\"params\":{\"customInterval\":\"2h\",\"customLabel\":\"Mês a Mês\",\"extended_bounds\":{},\"field\":\"datahorasolicitacao\",\"interval\":\"M\",\"min_doc_count\":1},\"schema\":\"segment\",\"type\":\"date_histogram\"},{\"enabled\":true,\"id\":\"1\",\"params\":{\"customBucket\":{\"enabled\":true,\"id\":\"1-bucket\",\"params\":{\"customInterval\":\"2h\",\"customLabel\":\"Aberto\",\"extended_bounds\":{},\"field\":\"datahorasolicitacao\",\"interval\":\"M\",\"min_doc_count\":1},\"schema\":{\"aggFilter\":[],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"bucketAgg\",\"params\":[],\"title\":\"Bucket Agg\"},\"type\":\"date_histogram\"},\"customLabel\":\"Aberto\",\"customMetric\":{\"enabled\":true,\"id\":\"1-metric\",\"params\":{\"customLabel\":\"Aberto\"},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"metricAgg\",\"params\":[],\"title\":\"Metric Agg\"},\"type\":\"count\"}},\"schema\":\"metric\",\"type\":\"avg_bucket\"},{\"enabled\":true,\"id\":\"2\",\"params\":{\"customBucket\":{\"enabled\":true,\"id\":\"2-bucket\",\"params\":{\"customInterval\":\"2h\",\"customLabel\":\"Fechado\",\"extended_bounds\":{},\"field\":\"datahorafim\",\"interval\":\"M\",\"min_doc_count\":1},\"schema\":{\"aggFilter\":[],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"bucketAgg\",\"params\":[],\"title\":\"Bucket Agg\"},\"type\":\"date_histogram\"},\"customLabel\":\"Fechado\",\"customMetric\":{\"enabled\":true,\"id\":\"2-metric\",\"params\":{\"customLabel\":\"Fechado\"},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"metricAgg\",\"params\":[],\"title\":\"Metric Agg\"},\"type\":\"count\"}},\"schema\":\"metric\",\"type\":\"max_bucket\"}],\"params\":{\"addLegend\":true,\"addTimeMarker\":true,\"addTooltip\":true,\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"labels\":{\"rotate\":0,\"show\":true,\"truncate\":7},\"position\":\"bottom\",\"scale\":{\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{},\"type\":\"category\"}],\"grid\":{\"categoryLines\":true,\"style\":{\"color\":\"#eee\"},\"valueAxis\":\"ValueAxis-1\"},\"legendPosition\":\"right\",\"seriesParams\":[{\"data\":{\"id\":\"1\",\"label\":\"Aberto\"},\"drawLinesBetweenPoints\":true,\"interpolate\":\"linear\",\"mode\":\"stacked\",\"show\":\"true\",\"showCircles\":true,\"type\":\"histogram\",\"valueAxis\":\"ValueAxis-1\"},{\"data\":{\"id\":\"2\",\"label\":\"Fechado\"},\"drawLinesBetweenPoints\":true,\"interpolate\":\"linear\",\"lineWidth\":5,\"mode\":\"normal\",\"show\":true,\"showCircles\":true,\"type\":\"line\",\"valueAxis\":\"ValueAxis-1\"}],\"times\":[],\"type\":\"histogram\",\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"filter\":false,\"rotate\":0,\"show\":true,\"truncate\":100},\"name\":\"LeftAxis-1\",\"position\":\"left\",\"scale\":{\"mode\":\"normal\",\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"Aberto\"},\"type\":\"value\"}]},\"title\":\"Mês a Mês2\",\"type\":\"histogram\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"2a9c63c0-9c02-11e8-9b47-0d15ac222371\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"kuery\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "a4740870-8c20-11e8-bbee-f70be0a1603d",
+    "_type": "visualization",
+    "_source": {
+      "title": "Region Map2",
+      "visState": "{\"title\":\"Region Map2\",\"type\":\"region_map\",\"params\":{\"legendPosition\":\"bottomright\",\"addTooltip\":true,\"colorSchema\":\"Yellow to Red\",\"selectedLayer\":{\"name\":\"Pernambuco City (self-hosted)\",\"url\":\"http://172.30.6.127:8080/temp/docker-elk/apache/pe.geojson\",\"attribution\":\"INRAP\",\"fields\":[{\"name\":\"name\",\"description\":\"cidade\"}],\"format\":{\"type\":\"geojson\"},\"meta\":{\"feature_collection_path\":\"data\"},\"layerId\":\"self_hosted.Pernambuco City (self-hosted)\"},\"selectedJoinField\":{\"name\":\"name\",\"description\":\"cidade\"},\"isDisplayWarning\":true,\"wms\":{\"enabled\":false,\"options\":{\"format\":\"image/png\",\"transparent\":true},\"baseLayersAreLoaded\":{},\"tmsLayers\":[{\"id\":\"road_map\",\"url\":\"https://tiles.maps.elastic.co/v2/default/{z}/{x}/{y}.png?elastic_tile_service_tos=agree&my_app_name=kibana&my_app_version=6.3.0\",\"minZoom\":0,\"maxZoom\":10,\"attribution\":\"<p>&#169; <a href=\\\"http://www.openstreetmap.org/copyright\\\">OpenStreetMap</a> contributors | <a href=\\\"https://www.elastic.co/elastic-maps-service\\\">Elastic Maps Service</a></p>&#10;\",\"subdomains\":[]}],\"selectedTmsLayer\":{\"id\":\"road_map\",\"url\":\"https://tiles.maps.elastic.co/v2/default/{z}/{x}/{y}.png?elastic_tile_service_tos=agree&my_app_name=kibana&my_app_version=6.3.0\",\"minZoom\":0,\"maxZoom\":10,\"attribution\":\"<p>&#169; <a href=\\\"http://www.openstreetmap.org/copyright\\\">OpenStreetMap</a> contributors | <a href=\\\"https://www.elastic.co/elastic-maps-service\\\">Elastic Maps Service</a></p>&#10;\",\"subdomains\":[]}},\"mapZoom\":2,\"mapCenter\":[0,0],\"outlineWeight\":1,\"showAllShapes\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"cidade.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":999,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
+      "uiStateJSON": "{\"mapZoom\":8,\"mapCenter\":[-7.906911616469297,-37.55126953125001]}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"2a9c63c0-9c02-11e8-9b47-0d15ac222371\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"kuery\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "8862ab50-8c20-11e8-bbee-f70be0a1603d",
+    "_type": "visualization",
+    "_source": {
+      "title": "Em Aberto2",
+      "visState": "{\"title\":\"Em Aberto2\",\"type\":\"gauge\",\"params\":{\"type\":\"gauge\",\"addTooltip\":true,\"addLegend\":true,\"isDisplayWarning\":false,\"gauge\":{\"verticalSplit\":false,\"extendRange\":true,\"percentageMode\":false,\"gaugeType\":\"Arc\",\"gaugeStyle\":\"Full\",\"backStyle\":\"Full\",\"orientation\":\"vertical\",\"colorSchema\":\"Green to Red\",\"gaugeColorMode\":\"Labels\",\"colorsRange\":[{\"from\":100,\"to\":125}],\"invertColors\":false,\"labels\":{\"show\":true,\"color\":\"black\"},\"scale\":{\"show\":false,\"labels\":false,\"color\":\"#333\"},\"type\":\"meter\",\"style\":{\"bgWidth\":0.9,\"width\":0.9,\"mask\":false,\"bgMask\":false,\"maskBars\":50,\"bgFill\":\"#eee\",\"bgColor\":false,\"subText\":\"\",\"fontSize\":60,\"labelColor\":true}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"group\",\"params\":{\"filters\":[{\"input\":{\"query\":\"idstatus:1 idstatus:5\"},\"label\":\"Em Andamento\"},{\"input\":{\"query\":\"idstatus:2\"},\"label\":\"Suspenso\"}]}}]}",
+      "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"100 - 125\":\"rgb(0,104,55)\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"2a9c63c0-9c02-11e8-9b47-0d15ac222371\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"kuery\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "efecf9c0-8c1f-11e8-bbee-f70be0a1603d",
+    "_type": "visualization",
+    "_source": {
+      "title": "Chamados por Contratantes2",
+      "visState": "{\"title\":\"Chamados por Contratantes2\",\"type\":\"histogram\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":true,\"style\":{\"color\":\"#eee\"},\"valueAxis\":\"ValueAxis-1\"},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100,\"rotate\":0},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"square root\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false,\"orderBucketsBySum\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"numero.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":15,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Contratantes\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"2a9c63c0-9c02-11e8-9b47-0d15ac222371\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"kuery\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "2dc9d9a0-8c22-11e8-bbee-f70be0a1603d",
+    "_type": "visualization",
+    "_source": {
+      "title": "idstatus Contador2",
+      "visState": "{\"title\":\"idstatus Contador2\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":100}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":64}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"group\",\"params\":{\"filters\":[{\"input\":{\"query\":\"idstatus:1\"},\"label\":\"Em Andamento\"},{\"input\":{\"query\":\"idstatus:2\"},\"label\":\"Suspenso\"},{\"input\":{\"query\":\"idstatus:5\"},\"label\":\"Reaberta\"},{\"input\":{\"query\":\"idstatus:3\"},\"label\":\"Cancelada\"},{\"input\":{\"query\":\"idstatus:4\"},\"label\":\"Resolvida\"},{\"input\":{\"query\":\"idstatus:6\"},\"label\":\"Fechada\"},{\"input\":{\"query\":\"idstatus:7\"},\"label\":\"Reclassificada\"}]}}]}",
+      "uiStateJSON": "{\"spy\":{\"mode\":{\"name\":\"response\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"2a9c63c0-9c02-11e8-9b47-0d15ac222371\",\"filter\":[],\"query\":{\"language\":\"kuery\",\"query\":\"\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "d1a28b90-8f4b-11e8-a7f3-bb6c7b95c33d",
+    "_type": "visualization",
+    "_source": {
+      "title": "Location2",
+      "visState": "{\"title\":\"Location2\",\"type\":\"tile_map\",\"params\":{\"mapType\":\"Heatmap\",\"isDesaturated\":true,\"addTooltip\":true,\"heatClusterSize\":2.4,\"legendPosition\":\"bottomright\",\"mapZoom\":2,\"mapCenter\":[0,0],\"wms\":{\"enabled\":false,\"options\":{\"format\":\"image/png\",\"transparent\":true},\"baseLayersAreLoaded\":{},\"tmsLayers\":[{\"id\":\"road_map\",\"url\":\"https://tiles.maps.elastic.co/v2/default/{z}/{x}/{y}.png?elastic_tile_service_tos=agree&my_app_name=kibana&my_app_version=6.3.0\",\"minZoom\":0,\"maxZoom\":10,\"attribution\":\"<p>&#169; <a href=\\\"http://www.openstreetmap.org/copyright\\\">OpenStreetMap</a> contributors | <a href=\\\"https://www.elastic.co/elastic-maps-service\\\">Elastic Maps Service</a></p>&#10;\",\"subdomains\":[]}],\"selectedTmsLayer\":{\"id\":\"road_map\",\"url\":\"https://tiles.maps.elastic.co/v2/default/{z}/{x}/{y}.png?elastic_tile_service_tos=agree&my_app_name=kibana&my_app_version=6.3.0\",\"minZoom\":0,\"maxZoom\":10,\"attribution\":\"<p>&#169; <a href=\\\"http://www.openstreetmap.org/copyright\\\">OpenStreetMap</a> contributors | <a href=\\\"https://www.elastic.co/elastic-maps-service\\\">Elastic Maps Service</a></p>&#10;\",\"subdomains\":[]}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"geohash_grid\",\"schema\":\"segment\",\"params\":{\"field\":\"location\",\"autoPrecision\":true,\"isFilteredByCollar\":true,\"useGeocentroid\":true,\"precision\":4}}]}",
+      "uiStateJSON": "{\"mapZoom\":8,\"mapCenter\":[-8.309341443917631,-37.62268066406251]}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"2a9c63c0-9c02-11e8-9b47-0d15ac222371\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"kuery\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "37359d80-9b36-11e8-b120-3706c0378857",
+    "_type": "visualization",
+    "_source": {
+      "title": "Tabela",
+      "visState": "{\"title\":\"Tabela\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"idsolicitacaoservico\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":100,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"ID\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"datahorasolicitacao\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":100,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Solicitação\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"nomecontato.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":100,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Contato\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"grupocontratante.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":100,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Grupo\"}},{\"id\":\"6\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"urgencia.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":100,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Urgencia\"}},{\"id\":\"7\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"resposta.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":100,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Resposta\"}},{\"id\":\"8\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"justificativavencimentosla.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":100,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Justificativa\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"2a9c63c0-9c02-11e8-9b47-0d15ac222371\",\"filter\":[],\"query\":{\"language\":\"kuery\",\"query\":\"\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "4e9d73f0-9b2f-11e8-b120-3706c0378857",
+    "_type": "visualization",
+    "_source": {
+      "title": "Controle",
+      "visState": "{\"title\":\"Controle\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1533748689557\",\"indexPattern\":\"2a9c63c0-9c02-11e8-9b47-0d15ac222371\",\"fieldName\":\"numero.keyword\",\"parent\":\"\",\"label\":\"Contratante\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":50,\"order\":\"desc\"}},{\"id\":\"1533748700976\",\"indexPattern\":\"2a9c63c0-9c02-11e8-9b47-0d15ac222371\",\"fieldName\":\"anosolicitacao\",\"parent\":\"\",\"label\":\"Ano\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":50,\"order\":\"desc\"}},{\"id\":\"1533748716345\",\"indexPattern\":\"2a9c63c0-9c02-11e8-9b47-0d15ac222371\",\"fieldName\":\"messolicitacao\",\"parent\":\"\",\"label\":\"Mes\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":12,\"order\":\"desc\"}},{\"id\":\"1533748733829\",\"indexPattern\":\"2a9c63c0-9c02-11e8-9b47-0d15ac222371\",\"fieldName\":\"case.keyword\",\"parent\":\"\",\"label\":\"Case\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":50,\"order\":\"desc\"}}],\"updateFiltersOnChange\":true,\"useTimeFilter\":false,\"pinFilters\":true},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  }
+]
