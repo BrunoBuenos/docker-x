@@ -7,6 +7,23 @@ server.host: "0"
 elasticsearch.url: http://elasticsearch:9200
 xpack.monitoring.ui.container.elasticsearch.enabled: true
 
+regionmap:
+ layers:
+    - name: "Pernambuco City (self-hosted)"
+      url: "http://172.30.6.127:8080/temp/docker-elk/apache/pe.geojson"
+      attribution: "INRAP"
+      fields:
+         - name: "name"
+           description: "cidade"
+
+    - name: "Recife Bairros (self-hosted)"
+      url: "http://172.30.6.127:8080/temp/docker-elk/apache/bairro.geojson"
+      fields:
+         - name: "bairro"
+           description: "Nome do Bairro Recife"
+
+
+
 ## X-Pack security credentials
 #
 elasticsearch.username: elastic
